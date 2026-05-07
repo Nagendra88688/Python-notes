@@ -1,0 +1,3 @@
+* Strings
+  - name = 'nagendra'
+    name[2,5] = 'nag'
