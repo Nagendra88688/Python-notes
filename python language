@@ -19,3 +19,7 @@
       | Boolean  | `bool`                             |
       | Binary   | `bytes`, `bytearray`, `memoryview` |
       | Special  | `NoneType`                         |
+
+
+* Higher Order Functions:
+  - a function that accepts a function as its parameter.
