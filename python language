@@ -1,3 +1,9 @@
 * Strings
   - name = 'nagendra'
     name[2:5] = 'gen'
+
+* Swapping values
+                    a=1
+                    b=2
+                    a,b = b,a   //swapping
+      (tuple unpacking)   (tuple packing)
