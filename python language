@@ -46,3 +46,10 @@
 * Modules & Packages ============================
   - A module is a file containing multiple functions grouped together.
   - A package is a folder containing all modules.
+
+
+* __name__ global variable ==========
+  if we print it in the file we're executing, it will print "main"
+  but we print it inside a file being used as a module, it will print the name of that module.
+  It is used to detect weather a file is being called directly, or, as a module.
+
