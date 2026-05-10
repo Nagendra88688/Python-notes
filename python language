@@ -53,3 +53,49 @@
   but we print it inside a file being used as a module, it will print the name of that module.
   It is used to detect weather a file is being called directly, or, as a module.
 
+
+
+
+
+* OOP(Class & objects) ================
+
+  - OOP is a way of organizing code using objects and classes.
+  - Class  -> Blueprint
+    Object -> Real thing created from blueprint
+
+        class Student:
+            school = "AVN"                    // this is class variable(Shared by all objects)
+
+            def __init__(self, name, age):   // this init is called by default when a class is called(It's not constructor)
+                self.name = name             // self refers to the current object
+                self.age = age               // these are instance variables(Different for every object)
+
+            def greet(self):
+              print("Hello, my name is {self.name}")
+
+            @classmethod                 // explicitly saying that this is a class method
+            def giveSchool(cls):
+                print(cls.school)
+        
+        
+        s1 = Student("Harsh", 20)  // s1 object created using class Student
+        
+        print(s1.name)                 // prints "Harsh"
+        s1.greet()                    // prints "Hello, my name is Harsh"
+        print(Student.giveSchool())  // prints "AVN"
+
+
+
+  - "__init__" method is called by default in class but it is not the constructor method.
+    "__new__" is the real constructor method.
+
+  - By default, every method is an instance method(using instance varialbles)
+    The Class methods(that use class variables) are created by writing "@classmethod" above the method.
+
+
+
+
+
+
+* Singleton class
+
