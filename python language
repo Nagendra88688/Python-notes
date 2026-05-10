@@ -43,4 +43,6 @@
             display()
 
 
-* 
+* Modules & Packages ============================
+  - A module is a file containing multiple functions grouped together.
+  - A package is a folder containing all modules.
