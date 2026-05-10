@@ -92,6 +92,8 @@
   - By default, every method is an instance method(using instance varialbles)
     The Class methods(that use class variables) are created by writing "@classmethod" above the method.
 
+  - Similarily, we write @static above a method that doesn't use class or instance variable, but its own variable
+
 
 
 
