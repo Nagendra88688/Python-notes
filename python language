@@ -110,6 +110,21 @@
     In class C(A,B)  : if we are calling a method through object made by C class but C doesn't have that method while A & B both
     have these methods with the same name, the method of A will be called because we've written C(A,B) with A as priority over B.
 
+ - "super()" method: this methods gives the object of this parent class, containing the methods of parent
+
+              class A:                        // parent class
+                  def parentCall(self):    
+                      print('call A')
+              
+              class B(A):                  // child inheriting from parent
+                  def call(self):
+                      print('call B')    
+                      super().parentCall()  // super function providing an object that contains the method of parent
+                  
+              
+              obj = B()
+              obj.call()                    // prints "call B" & "call A" both
+
 
 
 * Singleton class
