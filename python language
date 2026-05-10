@@ -96,6 +96,19 @@
 
 
 
+* OOP (Inheritance) ==================
+  - A class can inherit methods from its parent class
+  - class B(A):       // It means class B is inheriting from A (Single Level Inheritance)
+        ...something
+  - class C(A,B):       // It means class C is inheriting from A & B (Multiple Inheritance)
+        ...something
+
+  - If C is inheriting from A and B as shown above, it's called Multiple Inheritance.
+    But if C is inheriting from B, and B is inheriting from A, it's called Multi-Level Inheritance.
+
+  - MRO(Method Resolution Order)
+    In class C(A,B)  : if we are calling a method through object made by C class but C doesn't have that method while A & B both
+    have these methods with the same name, the method of A will be called because we've written C(A,B) with A as priority over B.
 
 
 
