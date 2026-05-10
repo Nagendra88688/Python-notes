@@ -23,3 +23,24 @@
 
 * Higher Order Functions:
   - a function that accepts a function as its parameter.
+
+* Decorators ========
+  - Decorators in Python are used to modify or extend the behavior of a function without changing its actual code.
+  - Think of a decorator as a wrapper around a function.
+           
+            def decorator_function(original_function):
+                def wrapper_function():
+                    print("Before function")
+                    original_function()
+                    print("After function")
+                return wrapper_function
+            
+            
+            @decorator_function    // using the decorator above the original function
+            def display():
+                print("Hello")
+            
+            display()
+
+
+* 
