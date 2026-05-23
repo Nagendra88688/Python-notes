@@ -1,1 +1,22 @@
+* Decorators in Python are a way to modify or extend the behavior of a function (or class) without changing its actual code.
+  A decorator is basically a function that takes another function as input, adds some functionality, and returns a new function.
 
+* def decorator_function(original_function):
+    def wrapper_function():
+        print("Something before the function runs")
+        original_function()
+        print("Something after the function runs")
+
+    return wrapper_function
+
+* @decorator_function   // usage
+  def greet():
+      print("Hello")
+
+* Important Concept: 
+    -functools.wraps(preserves metadata)
+    - @staticmethod(no need of self)
+    - @property (makes methods behave like attributes in class)
+
+* Used for: Authentications, logging systems, rate limiting
+  
