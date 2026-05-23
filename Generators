@@ -1,0 +1,79 @@
+* Generators in Python are a special type of function that allow you to produce values one at a time, 
+  instead of creating and storing all values in memory at once.
+
+* They are useful for:
+    handling large data
+    improving memory efficiency
+    creating streams of values
+    lazy evaluation
+
+* def normal_function():
+    return [1, 2, 3]
+
+* def generator_function():
+    yield 1          // Instead of return, generators use yield.
+    yield 2
+    yield 3
+
+* What Does yield Do? ->   pauses the function,
+                          saves its current state,
+                          returns a value,
+                          and resumes from the same point later.
+
+* def count_up():
+    yield 1
+    yield 2
+    yield 3
+
+  gen = count_up()    // the function returns a generator object, and execution only starts when we use "next" function
+  
+  print(next(gen))    // prints 1
+  print(next(gen))    // prints 2
+  print(next(gen))    // prints 3
+
+
+* Using Generators in Loops
+          def numbers():
+            yield 1
+            yield 2
+            yield 3
+        
+          for num in numbers():
+              print(num)
+
+* Why Generators Are Important
+    (Suppose you want 1 million numbers)
+        Bad Approach: nums = [i for i in range(1000000)]
+        Generator Approach:
+              def generate_nums():
+                for i in range(1000000):
+                    yield i                  // Only one value exists at a time, Huge memory savings.
+
+* Generators can produce infinite sequences
+      def infinite_numbers():
+            n = 1
+            while True:
+                yield n
+                n += 1
+      gen = infinite_numbers()
+      print(next(gen))
+      print(next(gen))
+      print(next(gen))
+
+* Key Difference: return vs yield
+        --return--	                 --yield--
+        Ends function	               Pauses function
+        Returns once	               Can return many times
+        Function state lost	         Function state preserved
+        Produces final value	       Produces sequence lazily
+
+
+* Common Uses of Generators:
+        file processing
+        streaming APIs
+        large datasets
+        pipelines
+        asynchronous programming
+        data science
+        web scraping
+
