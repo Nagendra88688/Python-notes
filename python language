@@ -54,6 +54,10 @@
   It is used to detect weather a file is being called directly, or, as a module.
 
 
+* List comprehension============
+  - List comprehension is a concise and powerful way to create lists in Python.
+  - squares = [x*x for x in range(5)]                 // output [0, 1, 4, 9, 16]
+  - evens = [x for x in range(10) if x % 2 == 0]     // output [0, 2, 4, 6, 8]
 
 
 
