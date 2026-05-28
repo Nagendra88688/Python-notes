@@ -1,0 +1,5 @@
+* Memory management in Python is the system Python uses to:
+  -allocate memory,
+  -track objects,
+  -and automatically free unused memory.
+
