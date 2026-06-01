@@ -1,0 +1,26 @@
+async def greet():
+    print("Hello")
+
+greet()    //  This does not execute the function, instead it returns a coroutine object.
+
+
+* What is a Coroutine?
+      A coroutine is a special function that can:
+         - pause execution
+         - resume later
+         - cooperate with other coroutines
+      
+          Think of it as a smarter function.
+
+
+
+import asyncio
+
+async def greet():
+    print("Start")
+
+    await asyncio.sleep(2)
+
+    print("End")
+
+asyncio.run(greet())
