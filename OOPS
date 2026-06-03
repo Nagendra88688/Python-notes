@@ -1,0 +1,8 @@
+* Basic class creation and usage by object:
+              class Student:
+                  def greet(self):
+                      print('hello ')
+              
+              aman = Student()
+              aman.greet()
+
