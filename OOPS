@@ -41,16 +41,22 @@
           2. Instance Methods(that use instance variables)
                   - (a) Accessor methods : they just access the instance variables
                   - (b) Mutator methods: they also update the variables
+          3. Static methods (that does not use class or instance variable)
 
-          Example of Class method:
+          Example of Class method & static method:
               class Student:
                   school="avn"
               
                   @classmethod            // decorator used to specify that below written is the class method
                   def get_school(cls):    // cls is used in class methods instead of self
                       print(cls.school)
+
+                  @staticmethod            // decorator used to specify that below written is a static method
+                  def greet():            // no argument taken
+                      print("hello world")
               
               Student.get_school()
+              Student.greet()
   
 
 
