@@ -37,7 +37,7 @@
         print(Student.giveSchool())  // prints "AVN"
 
   - Methods are of 2 types : 
-          1. Class methods
+          1. Class methods (they use class variables)
           2. Instance Methods(that use instance variables)
                   - (a) Accessor methods : they just access the instance variables
                   - (b) Mutator methods: they also update the variables
