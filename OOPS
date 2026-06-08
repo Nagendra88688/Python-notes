@@ -36,6 +36,23 @@
         s1.greet()                    // prints "Hello, my name is Harsh"
         print(Student.giveSchool())  // prints "AVN"
 
+  - Methods are of 2 types : 
+          1. Class methods
+          2. Instance Methods(that use instance variables)
+                  - (a) Accessor methods : they just access the instance variables
+                  - (b) Mutator methods: they also update the variables
+
+          Example of Class method:
+              class Student:
+                  school="avn"
+              
+                  @classmethod            // decorator used to specify that below written is the class method
+                  def get_school(cls):    // cls is used in class methods instead of self
+                      print(cls.school)
+              
+              Student.get_school()
+  
+
 
 
   - "__init__" method is called by default in class but it is not the constructor method.
