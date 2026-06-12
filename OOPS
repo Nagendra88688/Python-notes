@@ -80,6 +80,9 @@
 
   - If C is inheriting from A and B as shown above, it's called Multiple Inheritance.
     But if C is inheriting from B, and B is inheriting from A, it's called Multi-Level Inheritance.
+  
+  - Constructor in Inheritance: 
+          If B is inheriting from A and B does not have it's own init method, then it will call A's init method.
 
   - MRO(Method Resolution Order)
     In class C(A,B)  : if we are calling a method through object made by C class but C doesn't have that method while A & B both
